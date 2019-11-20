@@ -1,0 +1,68 @@
+﻿<Window x:Class="Proyecto.NuevoProducto"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    Background="{DynamicResource MaterialDesignPaper}"
+    TextElement.FontWeight="Medium"
+    TextElement.FontSize="14"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Icon="Recursos/flemidra.ico"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="NuevoCliente" Height="570" Width="425" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <Grid>
+                <materialDesign:ColorZone Mode="PrimaryDark">
+                    <StackPanel HorizontalAlignment="Right">
+                        <Button Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="Button_Click" >
+                            <materialDesign:PackIcon Kind="WindowClose" />
+                        </Button>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1">
+            <materialDesign:ColorZone Mode="PrimaryMid">
+                <TextBlock FontFamily="Raleway" FontWeight="SemiBold" Text="Registro de Producto" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30 50 0 10"/>
+
+            </materialDesign:ColorZone>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Vertical" Margin="0 40 0 0">
+                <StackPanel Orientation="Horizontal" Margin="40 0 0 0">
+                    <materialDesign:PackIcon Kind="Apple" Foreground="{Binding ElementName=TxtNombre, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" />
+                    <TextBox x:Name="TxtNombre" Width="300" materialDesign:HintAssist.Hint="Nombre" materialDesign:HintAssist.IsFloating="True" Margin="5 0 0 0"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="40 40 0 0">
+                    <materialDesign:PackIcon Kind="Plus" Foreground="{Binding ElementName=TxtQuantity, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" />
+                    <TextBox x:Name="TxtQuantity" Width="300" materialDesign:HintAssist.Hint="Cantidad" materialDesign:HintAssist.IsFloating="True" Margin="5 0 0 0"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="40 40 0 0">
+                    <materialDesign:PackIcon Kind="Coin" Foreground="{Binding ElementName=TxtPrice, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" />
+                    <TextBox x:Name="TxtPrice" Width="300" materialDesign:HintAssist.Hint="Precio" materialDesign:HintAssist.IsFloating="True" Margin="5 0 0 0"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="40 40 0 0">
+                    <materialDesign:PackIcon Kind="Category" Foreground="{Binding ElementName=TxtCat, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" />
+                    <ComboBox x:Name="TxtCat" Width="300" materialDesign:HintAssist.Hint="Categoria" materialDesign:HintAssist.IsFloating="True" Margin="5 0 0 0"/>
+                </StackPanel>
+
+                <Button Click="AgregarProducto"
+                    Style="{DynamicResource MaterialDesignRaisedAccentButton}"  Content="Registrar" Width="135" HorizontalAlignment="Center" Margin="118,60,132,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

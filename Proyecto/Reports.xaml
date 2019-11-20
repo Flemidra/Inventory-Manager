@@ -1,0 +1,47 @@
+﻿<Page x:Class="Proyecto.Reports"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      Background="{DynamicResource MaterialDesignPaper}"
+      TextElement.FontWeight="Medium"
+      TextElement.FontSize="14"
+      FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="880" Title="Reports">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Background="White" HorizontalAlignment="Stretch">
+                <TextBlock  Text="Reporte" FontSize="35" FontFamily="Raleway" FontWeight="SemiBold"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 30 0 -20"/>
+                <DataGrid FontFamily="Montserrat" FontWeight="Bold" Name="TablaProductos" Background="#b7b6b6" Height="380" Width="750" Margin="0 40 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="Product_Table_Loaded">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="80" Header="Evento" Binding="{Binding Path='Evento'}" IsReadOnly="True"/>
+                        <DataGridTextColumn Width="150" Header="Producto" Binding="{Binding Path='Producto'}" IsReadOnly="True"/>
+                        <DataGridTextColumn Width="150" Header="Categoria" Binding="{Binding Path='Categoria'}" IsReadOnly="True"/>
+                        <DataGridTextColumn Width="90" Header="Cantidad" Binding="{Binding Path='Cantidad'}" IsReadOnly="True"/>
+                        <DataGridTextColumn Width="100" Header="Fecha" Binding="{Binding Path='Fecha', StringFormat=\{0:dd-MM-yyyy\}}" IsReadOnly="True"/>
+                        <DataGridTextColumn Width="100" Header="Usuario" Binding="{Binding Path='Usuario'}" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DatePicker x:Name="StartDate" Width="120" HorizontalAlignment="Left" Margin="62 30 0 0" SelectedDateChanged="StartDate_SelectedDateChanged" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" />
+                
+                <TextBlock  Text="-" FontSize="35" FontFamily="Raleway" FontWeight="SemiBold"  HorizontalAlignment="Left" Margin="200 -40 0 0" />
+                <DatePicker x:Name="FinishDate" Width="120" HorizontalAlignment="Left" Margin="250 -50 0 0" SelectedDateChanged="FinishDate_SelectedDateChanged" Height="40" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right"/>
+                <ComboBox x:Name="TxtCat" Width="200" materialDesign:HintAssist.Hint="Categoria" materialDesign:HintAssist.IsFloating="True" Height="40" Margin="350 -50 0 0" SelectionChanged="TxtCat_SelectionChanged"  MaxDropDownHeight="33"/>
+
+            </StackPanel>
+            <Button Width="50" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="810 -355 0 0 " Style="{DynamicResource MaterialDesignRaisedAccentButton}" Click="Export">
+                <materialDesign:PackIcon Kind="Export" Height="20" Width="20" HorizontalAlignment="Center"/>
+                <Button.ToolTip> Exportar </Button.ToolTip>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

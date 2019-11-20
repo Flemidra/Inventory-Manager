@@ -1,0 +1,45 @@
+﻿<Window x:Class="Proyecto.DeleteConfirmation"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        Icon="Recursos/flemidra.ico"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="DeleteConfirmation" Height="150" Width="400" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <Grid>
+                <materialDesign:ColorZone Mode="PrimaryDark">
+                    <StackPanel  HorizontalAlignment="Right">
+                        <Button Margin="0 0 0 0" Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="Button_Click" BorderBrush="Black" Foreground="#DDFFFFFF"  >
+                            <materialDesign:PackIcon Kind="WindowClose" />
+                        </Button>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Background="White">
+            <Grid>
+                <TextBlock FontFamily="Montserrat" FontWeight="Light" FontSize="18" Text="Seguro desea eliminar el elemento?" Foreground="Black" HorizontalAlignment="Center" Margin="0 20 0 0"/>
+                <Button x:Name="YesButton" Width="80" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="-150 50 0 0" Click="Eliminar_Event" Background="#FF02A676" Content="Si"/>
+                <Button x:Name="NoButton" Width="80" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="150 50 0 0" Click="Button_Click" Background="#FF02A676" Content="No"/>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
+

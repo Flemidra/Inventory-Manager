@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Proyecto.Categories" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAECAAAAAAAAAAAAAAAAAAAAAAEABAAAIAAAAAAAA=</HashCode>
+      <FileName>Categories.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.EditarProducto" BaseTypeListCollapsed="true">
+    <Position X="10" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAAAAEAAACAEAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>EditarProducto.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.EditarUsuario" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEAAAAEAAAAAEAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>EditarUsuario.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.EditCategory" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAEYAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>EditCategory.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.106" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.GlobalVariables">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEUAAAAAAAAACAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto.Information" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Information.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAEAAAAAkAAAAAABAAAAAAASACAAA=</HashCode>
+      <FileName>Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.NewCategory" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAEQAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>NewCategory.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.NuevoProducto" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>NuevoProducto.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.NuevoUsuario" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAAEAAAAAEAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>NuevoUsuario.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.Productos" BaseTypeListCollapsed="true">
+    <Position X="9" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAECAAAAAAAAAAAAAAAAAAAAAAEABAAAIAAAAAAAA=</HashCode>
+      <FileName>Productos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.RecuperarUsuario" BaseTypeListCollapsed="true">
+    <Position X="6" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAAEAAAAAkAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RecuperarUsuario.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.Reports" BaseTypeListCollapsed="true">
+    <Position X="21" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAACIAAAAABAACBAAAAAAAEAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.SqlQueries">
+    <Position X="9.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABgBICAAAAAIAEAAgQAAAAQAAABAAAAEAggA=</HashCode>
+      <FileName>SqlQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto.Usuarios" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAAAAAAAAAAAAAAAAAAAAAADAAAIAAAAAAAA=</HashCode>
+      <FileName>Usuarios.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto.VentanaPrincipal" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="10.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAEAAAAAEEAAgAAAAAAAAAAgAAEAA=</HashCode>
+      <FileName>VentanaPrincipal.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

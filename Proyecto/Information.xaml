@@ -1,0 +1,27 @@
+﻿<Page x:Class="Proyecto.Information"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    TextElement.FontWeight="Medium"
+    TextElement.FontSize="14"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="880"
+      Title="Information">
+
+    <Grid Background="White">
+        <Image Margin="130,100,500,200">
+            <Image.Source>
+                Recursos\flemidra.png
+            </Image.Source>
+        </Image>
+        <Image Margin="509,37,131,158" Width="200">
+            <Image.Source>
+                Recursos\Logo-morsa.jpg
+            </Image.Source>
+        </Image>
+        <TextBlock Text="Created By: Flemidra And Associates" Margin="0 0 0 100" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="22"/>
+    </Grid>
+</Page>

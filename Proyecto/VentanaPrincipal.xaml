@@ -1,0 +1,75 @@
+﻿<Window x:Class="Proyecto.VentanaPrincipal"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    Background="{DynamicResource MaterialDesignPaper}"
+    TextElement.FontWeight="Medium"
+    Icon="Recursos/flemidra.ico"
+    TextElement.FontSize="14"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Title="VentanaPrincpal" Height="600" Width="1080" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <Grid>
+                <materialDesign:ColorZone Mode="PrimaryDark">
+                    <StackPanel  HorizontalAlignment="Right">
+                        <Button Margin="0 0 0 0" Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="Button_Click" BorderBrush="Black" Foreground="#DDFFFFFF"  >
+                            <materialDesign:PackIcon Kind="WindowClose" />
+                        </Button>
+                        <Button Margin="-65 -30 0 0" Width="30" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Padding="0" Click="MinimizeScreen" BorderBrush="Black" Foreground="#DDFFFFFF"  >
+                            <materialDesign:PackIcon Kind="WindowMinimize" />
+                        </Button>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" Grid.Column="0" Background="#017630" HorizontalAlignment="Stretch">
+                <Image Margin="0,20,0,-60" Height="70" Width="70">
+                    <Image.Source>
+                        Recursos\Logo-Hierro.png
+                    </Image.Source>
+                </Image>              
+                <Button x:Name="ReportBttn" Width="80" Height="60" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="0 80 0 0 " Click="ShowReports" Background="#FF02A676" BorderBrush="{x:Null}">
+                    <materialDesign:PackIcon Kind="ChromeReaderMode" Height="45" Width="60" HorizontalAlignment="Center"/>
+                </Button>
+                <TextBlock FontFamily="Montserrat" FontWeight="Light" FontSize="18" Text="Reportes" Foreground="White" HorizontalAlignment="Center"/>
+
+                <Button x:Name="CategoriesBttn" Width="80" Height="60" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin=" 0 20 0 0" Click="Show_Categories" BorderBrush="{x:Null}" Background="#FF02A676" >
+                    <materialDesign:PackIcon Kind="Category" Height="45" Width="70" HorizontalAlignment="Center"/>
+                </Button>
+                <TextBlock FontFamily="Montserrat" FontWeight="Light" FontSize="18" Text="Categorias" Foreground="White" HorizontalAlignment="Center"/>
+
+                <Button x:Name="ProductsBttn" Width="80" Height="60" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin=" 0 20 0 0"  Click="ShowProductos" Background="#FF02A676" BorderBrush="{x:Null}">
+                    <materialDesign:PackIcon Kind="LocalShipping" Height="45" Width="70" HorizontalAlignment="Center" />
+                </Button>
+                <TextBlock FontFamily="Montserrat" FontWeight="Light" FontSize="18" Text="Productos" Foreground="White" HorizontalAlignment="Center"/>
+
+                <Button x:Name="UserBttn" Width="80" Height="60" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin=" 0 20 0 0" Click="Show_Usuarios" BorderBrush="{x:Null}" Background="#FF02A676" >
+                    <materialDesign:PackIcon Kind="User" Height="45" Width="70" HorizontalAlignment="Center" />
+                </Button>
+                <TextBlock FontFamily="Montserrat" FontWeight="Light" FontSize="18" Text="Usuarios" Foreground="White" HorizontalAlignment="Center"/>
+                
+                <Button Width="50" Height="30" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin=" -150 45 0 0" Click="Log_Out" BorderBrush="{x:Null}" Background="#FF02A676" materialDesign:HintAssist.Hint="Cerrar Sesión">
+                    <materialDesign:PackIcon Kind="Logout" Height="20" Width="20" HorizontalAlignment="Center" />
+                </Button>
+            </StackPanel>
+                <Frame x:Name="Main" Margin="0 0 0 0"  Grid.Column="1" Grid.Row="0" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Window>
