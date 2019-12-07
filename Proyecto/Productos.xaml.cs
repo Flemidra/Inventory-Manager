@@ -18,7 +18,6 @@ namespace Proyecto
         {
             try
             {
-                
                 TablaProductos.ItemsSource = SqlQueries.UpdateDataGrid("SELECT [FlemidraDB].[dbo].[Products].[id] As 'ID', [FlemidraDB].[dbo].[Products].[name] As 'Nombre', [FlemidraDB].[dbo].[Products].[quantity] As 'Existencia', CONCAT('$. ', [FlemidraDB].[dbo].[Products].[price]) As 'Precio', CONCAT('$. ', [FlemidraDB].[dbo].[Products].[price] *1.12) As 'PrecioIva',  [FlemidraDB].[dbo].[Categories].[name] As 'Categoria', [FlemidraDB].[dbo].[Categories].[id] As 'IDcat' FROM [FlemidraDB].[dbo].[Products] LEFT JOIN [FlemidraDB].[dbo].[Categories] on [FlemidraDB].[dbo].[Products].[id_cat] = [FlemidraDB].[dbo].[Categories].[id]").DefaultView;
                 TablaProductos.AutoGenerateColumns = false;
                 TablaProductos.CanUserAddRows = false;
