@@ -90,8 +90,11 @@ namespace Launcher
                     updaterProcess.WaitForExit();
                     Invoke(new Action(
                         () => { Show();}));
-                    File.WriteAllText(AppVersionTxt, remoteAppVersion.ToString());
-                    localAppVersion = remoteAppVersion;
+                    if (updaterProcess.ExitCode == 0)
+                    {
+                        File.WriteAllText(AppVersionTxt, remoteAppVersion.ToString());
+                        localAppVersion = remoteAppVersion;
+                    }
                 }
                 //FIN APPVERSION
 
@@ -147,9 +150,15 @@ namespace Launcher
                         label1.Text = "Ocurrio un error inesperado al actualizar la aplicacion.";
                         label2.Text = e.GetType().Name + " " + e.Message;
                         label2.Visible = true;
+                        button1.Visible = true;
                     }));
                 }
             }
+        }
+
+        private void EjecutarUltimaVer(object sender, EventArgs e)
+        {
+
         }
     }
 }
