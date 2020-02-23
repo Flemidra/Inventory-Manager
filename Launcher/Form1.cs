@@ -155,10 +155,5 @@ namespace Launcher
                 }
             }
         }
-
-        private void EjecutarUltimaVer(object sender, EventArgs e)
-        {
-
-        }
     }
 }
